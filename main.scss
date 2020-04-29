@@ -241,3 +241,112 @@ body{
         order: 4;
     }
 }
+
+@media(max-width:600px)
+{
+    body{
+        font-size: 12px;
+
+        .bluebg{
+            display: flex;
+            flex-direction: column;
+            height: initial;
+
+            .logobar{
+                order: 1;
+                padding-bottom: 0;
+                height: 10vh;
+
+                button{
+                    font-size: 0.7em;
+                    width: 14em;
+                }
+
+                img{
+                    height: 100%;
+                    width: 30%;
+                    object-fit: contain;
+                }
+            }
+
+            .community{
+                order: 2;
+                text-align: center;
+                padding-top: 25px;
+
+                p{
+                    font-size: 1.6em;
+                }
+            }
+
+            .mockups{
+                order:3;
+
+                img
+                {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+        }
+
+        .cards{
+            .card{
+                flex-direction: column-reverse;
+                img{
+                    width: 100%;
+                    margin: 10% auto;
+                }
+            }
+        }
+
+        .container{
+            .build{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 80%;
+                height: 20%;
+                h1{
+                    text-align: center;
+                    font-size: 1.6em;
+                }
+            }
+
+            .dark{
+                margin-top: 20%;
+
+                .logoboi{
+                    padding-top: 10%;
+                }
+
+                .columns{
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    .column{
+                        margin: 4%;
+                    }
+
+                    p{
+                        font-size: 1.2em;
+                        margin:1%;
+                    }
+                }
+
+                .copyright{
+                    justify-self: center;
+                    align-self: center;
+                    p{
+                       text-align: center;
+                       font-size: 0.9em;
+                    }
+                }
+            }
+        }
+
+
+
+    }
+}
